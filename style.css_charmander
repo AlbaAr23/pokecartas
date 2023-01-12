@@ -58,6 +58,20 @@ body{
     }
 
 }
+.carta_fondo2{
+    height: 190px;
+    width: 140px;
+    background-image: url(img/carta_fondo_char.gif);
+    background-size: cover;
+    border-radius: 5%;
+    position: absolute;
+    z-index: 1;
+    margin-left: calc((150px - 140px)/2);
+    visibility: hidden;
+}
+.perspective:hover .carta_fondo2{
+    visibility: visible;
+}
 .face_2{
     position: absolute;
     background-image: url(img/minicharmander.jpg);
@@ -126,4 +140,25 @@ body{
     height: 90px;
     width: 120px;
     margin-left: calc((150px - 125px)/2);
+}
+.description{
+    position: absolute;
+    z-index: 3;
+    bottom: 65px;
+    margin-left: 17px;
+    background-image: linear-gradient(rgb(255, 196, 0), rgb(255, 223,118) );
+    height: 8px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.description h3{
+    font-size: 4.5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.Ability{
+    
 }

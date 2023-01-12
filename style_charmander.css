@@ -160,5 +160,22 @@ body{
     font-style: italic;
 }
 .Ability{
-    
+    position: absolute;
+    z-index: 3;
+    bottom: 40px;
+    margin-left: 13px;
+    font-size: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+.Details_ability{
+    position: absolute;
+    z-index: 4;
+    bottom: 20px;
+    margin-left: -20px;
+    font-size: 6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+
 }

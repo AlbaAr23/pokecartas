@@ -1,0 +1,181 @@
+body{
+    background: rgb(37, 33, 33);
+}
+.bulbasaur{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content:centerf
+}
+.perspective_bulbasaur{
+    perspective: 1000px;
+}
+.carta_fondo_bulbasaur{
+   height: 200px;
+   width: 150px;
+   background-color: green;
+   border-radius: 5%;
+   overflow: hidden;
+    position: relative ;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.20%);
+    cursor: pointer;
+}
+.carta_fondo_bulbasaur:hover{
+    transform: rotateY(30deg);
+    transition: 0.3s;
+}
+.carta_fondo_bulbasaur::before{
+    content:"";
+    height: 190px;
+    width: 140px;
+    background-image: url(img/charmander.jpg);
+    background-size: cover;
+    border-radius: 5%;
+    position: absolute;
+    z-index: 1;
+    margin-left: calc((150px - 140px)/2);
+}
+.carta_fondo_bulbasaur::after{
+    content: "";
+    position: absolute;
+    height: 350px;
+    width: 50px;
+    background-image: linear-gradient(rgb(46, 243, 46), rgb(141, 238, 51));
+    margin-left: calc((150px-50px)/2);
+    animation: rotar 2s linear infinite;
+    
+}
+
+@keyframes rotar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+.carta_fondo4{
+    height: 190px;
+    width: 140px;
+    background-image: url(img/carta_fondo_bulb.gif);
+    background-size: cover;
+    border-radius: 5%;
+    position: absolute;
+    z-index: 1;
+    margin-left: calc((150px - 140px)/2);
+    visibility: hidden;
+}
+.perspective_bulbasaur:hover .carta_fondo2{
+    visibility: visible;
+}
+.face_4{
+    position: absolute;
+    background-image: url(img/minibulbasaur.jpg);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    z-index: 3;
+    bottom: 175px;
+    margin-left: 13px;
+    border-radius: 50%;
+
+}
+.face_4:hover{
+    border: 1px solid rgb(0, 139, 19);
+}
+.nombre_bulbasaur{
+    position: absolute;
+    z-index: 3;
+    bottom: 168px;
+    margin-left: 35px;
+}
+.nombre_bulbasaur h2{
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.power_bulbasaur{
+    position: absolute;
+    z-index: 3;
+    bottom: 160px;
+    margin-left: 103px;
+
+}
+.power_bulbasaur h6{
+    font-size: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.planta{
+    position: absolute;
+    background-image: url(img/plantita.png);
+    background-size: cover;
+    height: 10px;
+    width: 10px;
+    z-index: 3;
+    border-radius: 50%;
+    bottom: 178px;
+    margin-left: 130px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+}
+.planta:hover{
+    border: 1px solid rgb(15, 14, 14);
+}
+
+.img_bulbasaur{
+    height: 90px;
+    width: 120px;
+    background-image: url(img/charmander\ kawaii.jpg);
+    background-size: cover;
+    z-index: 3;
+    position: absolute;
+    margin-left: calc((150px - 125px)/2);
+    top: 25px;
+    border: 4px solid yellow;
+}
+.img_bulbasaur:hover{
+    background-image: url(img/charmander_chachi.jpg);
+    height: 90px;
+    width: 120px;
+    margin-left: calc((150px - 125px)/2);
+}
+.description_bulbasaur{
+    position: absolute;
+    z-index: 3;
+    bottom: 65px;
+    margin-left: 17px;
+    background-image: linear-gradient(rgb(255, 196, 0), rgb(255, 223,118) );
+    height: 8px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.description_bulbasaur h3{
+    font-size: 4.5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.Ability_bulbasaur{
+    position: absolute;
+    z-index: 3;
+    bottom: 40px;
+    margin-left: 13px;
+    font-size: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+.Details_ability_bulbasaur{
+    position: absolute;
+    z-index: 4;
+    bottom: 20px;
+    margin-left: -20px;
+    font-size: 6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+
+}

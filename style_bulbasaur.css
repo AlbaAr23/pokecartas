@@ -133,7 +133,7 @@ body{
     position: absolute;
     margin-left: calc((150px - 125px)/2);
     top: 25px;
-    border: 4px solid yellow;
+    border: 4px solid greenyellow;
 }
 .img_bulbasaur:hover{
     background-image: url(img/bulbasaur_kawaii.jpg);

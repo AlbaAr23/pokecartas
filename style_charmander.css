@@ -6,7 +6,8 @@ body{
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content:centerf
+    justify-content:center;
+   
 }
 .perspective{
     perspective: 1000px;
@@ -17,9 +18,9 @@ body{
    background-color: yellow;
    border-radius: 5%;
    overflow: hidden;
-    position: relative ;
+   position: relative;
+   align-items: center;
     display: flex;
-    align-items: center;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.20%);
     cursor: pointer;
 }
@@ -34,7 +35,7 @@ body{
     background-image: url(img/charmander.jpg);
     background-size: cover;
     border-radius: 5%;
-    position: absolute;
+    position:relative;
     z-index: 1;
     margin-left: calc((150px - 140px)/2);
 }

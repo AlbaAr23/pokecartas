@@ -17,6 +17,7 @@ body{
    background-color: rgb(236, 236, 100);
    border-radius: 5%;
    overflow: hidden;
+   float: left;
     position: relative ;
     display: flex;
     align-items: center;

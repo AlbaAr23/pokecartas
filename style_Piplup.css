@@ -1,17 +1,17 @@
 body{
     background: rgb(37, 33, 33);
 }
-.bulbasaur{
+.Piplup{
     height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content:centerf
 }
-.perspective_bulbasaur{
+.perspective_Piplup{
     perspective: 1000px;
 }
-.carta_fondo_bulbasaur{
+.carta_fondo_Piplup{
    height: 200px;
    width: 150px;
    background-color: green;
@@ -23,22 +23,22 @@ body{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.20%);
     cursor: pointer;
 }
-.carta_fondo_bulbasaur:hover{
+.carta_fondo_Piplup:hover{
     transform: rotateY(30deg);
     transition: 0.3s;
 }
-.carta_fondo_bulbasaur::before{
+.carta_fondo_Piplup::before{
     content:"";
     height: 190px;
     width: 140px;
-    background-image: url(img/fondo_bulbasaur.jpg);
+    background-image: url(img/fondo_Piplup.jpg);
     background-size: cover;
     border-radius: 5%;
     position: absolute;
     z-index: 1;
     margin-left: calc((150px - 140px)/2);
 }
-.carta_fondo_bulbasaur::after{
+.carta_fondo_Piplup::after{
     content: "";
     position: absolute;
     height: 350px;
@@ -58,7 +58,7 @@ body{
     }
 
 }
-.carta_fondo4{
+.carta_fondo5{
     height: 190px;
     width: 140px;
     background-image: url(img/carta_fondo_bulb.gif);
@@ -69,10 +69,10 @@ body{
     margin-left: calc((150px - 140px)/2);
     visibility: hidden;
 }
-.perspective_bulbasaur:hover .carta_fondo2{
+.perspective_Piplup:hover .carta_fondo2{
     visibility: visible;
 }
-.face_4{
+.face_5{
     position: absolute;
     background-image: url(img/minibulbasaur.jpg);
     background-size: cover;
@@ -84,31 +84,31 @@ body{
     border-radius: 50%;
 
 }
-.face_4:hover{
+.face_5:hover{
     border: 1px solid rgb(0, 139, 19);
 }
-.nombre_bulbasaur{
+.nombre_Piplup{
     position: absolute;
     z-index: 3;
     bottom: 168px;
     margin-left: 35px;
 }
-.nombre_bulbasaur h2{
+.nombre_Piplup h2{
     font-size: 12px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.power_bulbasaur{
+.power_Piplup{
     position: absolute;
     z-index: 3;
     bottom: 160px;
     margin-left: 103px;
 
 }
-.power_bulbasaur h6{
+.power_Piplup h6{
     font-size: 8px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.planta{
+.agua{
     position: absolute;
     background-image: url(img/plantita.png);
     background-size: cover;
@@ -120,14 +120,14 @@ body{
     margin-left: 130px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
 }
-.planta:hover{
+.agua:hover{
     border: 1px solid rgb(15, 14, 14);
 }
 
-.img_bulbasaur{
+.img_Piplup{
     height: 90px;
     width: 120px;
-    background-image: url(img/bulbasaur_chachi.jpg);
+    background-image: url(img/charmander\ kawaii.jpg);
     background-size: cover;
     z-index: 3;
     position: absolute;
@@ -135,13 +135,13 @@ body{
     top: 25px;
     border: 4px solid yellow;
 }
-.img_bulbasaur:hover{
-    background-image: url(img/bulbasaur_kawaii.jpg);
+.img_Piplup:hover{
+    background-image: url(img/charmander_chachi.jpg);
     height: 90px;
     width: 120px;
     margin-left: calc((150px - 125px)/2);
 }
-.description_bulbasaur{
+.description_Piplup{
     position: absolute;
     z-index: 3;
     bottom: 65px;
@@ -154,12 +154,12 @@ body{
     justify-content: center;
     border-radius: 3px;
 }
-.description_bulbasaur h3{
+.description_Piplup h3{
     font-size: 4.5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
 }
-.Ability_bulbasaur{
+.Ability_Piplup{
     position: absolute;
     z-index: 3;
     bottom: 40px;
@@ -169,7 +169,7 @@ body{
     color: white;
 
 }
-.Details_ability_bulbasaur{
+.Details_ability_Piplup{
     position: absolute;
     z-index: 4;
     bottom: 20px;

@@ -1,0 +1,186 @@
+body{
+    background: rgb(37, 33, 33);
+}
+.Charizard{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.perspective_Charizard{
+    perspective: 1000px;
+}
+.carta_fondo_Charizard{
+   height: 200px;
+   width: 150px;
+   background-color: rgb(236, 236, 100);
+   border-radius: 5%;
+   overflow: hidden;
+   float: left;
+    position: relative ;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.20%);
+    cursor: pointer;
+}
+.carta_fondo_Charizard:hover{
+    transform: rotateY(30deg);
+    transition: 0.3s;
+}
+.carta_fondo_Charizard::before{
+    content:"";
+    height: 190px;
+    width: 140px;
+    background-image: url(img/fondo_char.jpg);
+    background-size: cover;
+    border-radius: 5%;
+    position: absolute;
+    z-index: 1;
+    margin-left: calc((150px - 140px)/2);
+}
+.carta_fondo_Charizard::after{
+    content: "";
+    position: absolute;
+    height: 350px;
+    width: 50px;
+    background-image: linear-gradient(rgb(241, 241, 62), rgb(238, 172, 51));
+    margin-left: calc((150px-50px)/2);
+    animation: rotar 2s linear infinite;
+    
+}
+
+@keyframes rotar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+.carta_fondo10{
+    height: 190px;
+    width: 140px;
+    background-image: url(img/char_fondo.gif);
+    background-size: cover;
+    border-radius: 5%;
+    position: absolute;
+    z-index: 1;
+    margin-left: calc((150px - 140px)/2);
+    visibility: hidden;
+}
+.perspective_Charizard:hover .carta_fondo10{
+    visibility: visible;
+}
+.face_10{
+    position: absolute;
+    background-image: url(img/mini_char.png);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    z-index: 3;
+    bottom: 175px;
+    margin-left: 13px;
+    border-radius: 50%;
+
+}
+.face_10:hover{
+    border: 1px solid rgb(14, 3, 3);
+}
+.nombre_Charizard{
+    position: absolute;
+    z-index: 3;
+    bottom: 168px;
+    margin-left: 35px;
+}
+.nombre_Charizard h2{
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orange;
+}
+.power_Charizard{
+    position: absolute;
+    z-index: 3;
+    bottom: 160px;
+    margin-left: 103px;
+   
+
+}
+.power_Charizard h6{
+    font-size: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orange;
+}
+.fuego{
+    position: absolute;
+    background-image: url(img/fueguito.jpg);
+    background-size: cover;
+    height: 10px;
+    width: 10px;
+    z-index: 3;
+    border-radius: 50%;
+    bottom: 178px;
+    margin-left: 130px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+}
+.fuego:hover{
+    border: 1px solid darkred;
+}
+
+.img_Charizard{
+    height: 90px;
+    width: 120px;
+    background-image: url(img/Char_chachi.jpg);
+    background-size: cover;
+    z-index: 3;
+    position: absolute;
+    margin-left: calc((150px - 125px)/2);
+    top: 25px;
+    border: 4px solid yellow;
+}
+.img_Charizard:hover{
+    background-image: url(img/char_kawaii.gif);
+    height: 90px;
+    width: 120px;
+    margin-left: calc((150px - 125px)/2);
+}
+.description_Charizard{
+    position: absolute;
+    z-index: 3;
+    bottom: 65px;
+    margin-left: 17px;
+    background-image: linear-gradient(rgb(88, 83, 67), rgb(212, 182, 82) );
+    height: 8px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.description_Charizard h3{
+    font-size: 4.5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: white;
+}
+.Ability_Charizard{
+    position: absolute;
+    z-index: 3;
+    bottom: 40px;
+    margin-left: 13px;
+    font-size: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+
+}
+.Details_ability_Charizard{
+    position: absolute;
+    z-index: 4;
+    bottom: 20px;
+    margin-left: -20px;
+    font-size: 6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+
+}
